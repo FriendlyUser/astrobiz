@@ -20,7 +20,7 @@ jobs:
         run: |
           npm install
           npm run build
-          echo .nojekyll > dist
+          echo "" > dist/.nojekyll
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
